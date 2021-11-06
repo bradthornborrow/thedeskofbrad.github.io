@@ -91,8 +91,8 @@ disableHugoGeneratorInject = false
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoMark = "[>]"
-      logoText = "BFTSYSTEMS"
+      logoMark = ""
+      logoText = ""
       logoHomeLink = "/"
       logoCursorColor = "#34fe2e"
     # or
