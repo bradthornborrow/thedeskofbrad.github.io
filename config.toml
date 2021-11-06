@@ -1,0 +1,115 @@
+baseURL = "/"
+title = "Brad Thornborrow"
+
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+# rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Brad Thornborrow"
+
+[taxonomies]
+  tag      = "tags"
+  
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 3:04 PM"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "The website and professional portfolio of Brad Thornborrow"
+  keywords = "homepage, blog"
+  images = [""]
+  
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = [ "/css/custom.css" ]
+  customJS  = []
+    
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  # Social icons
+  [[params.social]]
+    name = "gitlab"
+    url  = "https://gitlab.com/bftsystems"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/brad-thornborrow-130b89165/"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/bftsystems"
+	
+  [[params.social]]
+    name = "youtube"
+    url  = "https://www.youtube.com/channel/UC63IzK4ocGIkJtgYByM1c8Q"
+
+
+[languages]
+  [languages.en]
+    homeSubtitle = "Information Architect"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoMark = "[>]"
+      logoText = "BFTSYSTEMS"
+      logoHomeLink = "/"
+      logoCursorColor = "#34fe2e"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "contact/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"

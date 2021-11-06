@@ -1,0 +1,89 @@
+hr {
+  margin-top: 2em;
+}
+
+img {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+svg {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.logo__cursor {
+  margin-left: 2px;
+}
+
+.logo__text {
+  font-size: 1em;
+  letter-spacing: 0.4em;
+}
+
+.menu-trigger {
+  margin-left: 0;
+}
+
+.error-404 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 93%;
+  margin: auto;
+  font-size: 1.3rem;
+  flex-direction: row;
+  line-height: normal;
+}
+
+.img-404 {
+  margin: 0;
+}
+
+.img-404 svg {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-404 {
+	margin-left: 1em;
+	text-align: left;
+}
+
+.banner-404 h1 {
+    display: inline;
+    font-size: 2em;
+    margin: .5rem 0;
+}
+
+.banner-404 p {
+    margin-top: 0;
+}
+
+.banner-404 .btn-404 {
+    font-size: .8em;
+}
+
+.banner-404 .btn-404 a {
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 5px;
+    padding: 5px;
+	text-decoration: none;
+    transition-property: color, border-color;
+	vertical-align: middle;
+}
+	  
+.banner-404 .btn-404 a:first-child {
+    margin-right: 1em;
+}
+
+.banner-404 .btn-404 a:hover {
+    border-color: #fff;
+}
+
+.banner-404 .btn-404 svg {
+	margin-right: .5em;
+	vertical-align: middle;
+}

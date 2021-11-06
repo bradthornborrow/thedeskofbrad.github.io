@@ -1,0 +1,7 @@
+{{ $quotes := getJSON "static/quotes.json" }}
+{{ $quoteCount := len $quotes }}
+{{ $random := index .Site.Data.random 0 }}
+{{ $quoteIndex := div (mul (len $quotes) $random) 1000 }}
+{{ $motd := index $quotes $quoteIndex }}
+<blockquote style="margin: 1.5em;">{{ $motd.quote }}</blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;<cite>{{ $motd.citation }}</cite>
