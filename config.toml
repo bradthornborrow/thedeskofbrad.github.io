@@ -68,8 +68,8 @@ disableHugoGeneratorInject = false
 
   # Social icons
   [[params.social]]
-    name = "gitlab"
-    url  = "https://gitlab.com/bftsystems"
+    name = "github"
+    url  = "https://github.com/elbraderino"
 
   [[params.social]]
     name = "linkedin"
@@ -77,7 +77,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/bftsystems"
+    url  = "https://twitter.com/elbraderino"
 	
   [[params.social]]
     name = "youtube"
@@ -93,7 +93,7 @@ disableHugoGeneratorInject = false
 
     [languages.en.params.logo]
       logoMark = ""
-      logoText = ""
+      logoText = "H O M E"
       logoHomeLink = "/"
       logoCursorColor = "#34fe2e"
     # or
