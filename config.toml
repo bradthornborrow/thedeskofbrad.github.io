@@ -93,7 +93,7 @@ disableHugoGeneratorInject = false
 
     [languages.en.params.logo]
       logoMark = ""
-      logoText = "Home"
+      logoText = "The Desk of Brad..."
       logoHomeLink = "/"
       logoCursorColor = "#34fe2e"
     # or
