@@ -63,6 +63,7 @@ disableHugoGeneratorInject = false
   contentTypeName = "posts"
 
   # Default theme "light" or "dark"
+  enableThemeToggle = true
   defaultTheme = "dark"
 
   # Social icons
