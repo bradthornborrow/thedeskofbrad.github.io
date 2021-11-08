@@ -92,8 +92,8 @@ disableHugoGeneratorInject = false
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoMark = "[>]"
-      logoText = "HOME"
+      logoMark = ""
+      logoText = " "
       logoHomeLink = "/"
       logoCursorColor = "#34fe2e"
     # or
