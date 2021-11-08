@@ -12,6 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
+      - name: Update random seed only when scheduled
+        if: ${{ github.event_name == 'push' }}
+        run: echo "- $((RANDOM % 1000))" > ./data/random.yml
+
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
