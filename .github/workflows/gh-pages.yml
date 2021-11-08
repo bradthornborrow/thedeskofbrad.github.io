@@ -22,6 +22,7 @@ jobs:
         run: |
           echo "- $((RANDOM % 1000))" > ./data/random.yml
           git config --local user.name ${{ github.actor }}
+          git status
           git commit -m "Update random seed file"
           git push
 
