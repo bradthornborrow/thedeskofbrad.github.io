@@ -35,16 +35,6 @@
     }
 	, 
     {
-        "quote": "What's an auditor? Someone who arrives after the battle and bayonets all the wounded.", 
-        "citation": "Unknown "
-    }
-	, 
-    {
-        "quote": "Thank God every day when you get up that you have something to do that day which must be done whether you like it or not. Being forced to work and forced to do your best will breed in you temperance and self-control, diligence and strength of will, cheerfulness and content, and a hundred virtues which the idle will never know.", 
-        "citation": "Basil Carpenter"
-    }
-	, 
-    {
         "quote": "To every man is given the key to the gates of heaven; the same key opens the gates of hell.", 
         "citation": "Buddhist proverb"
     }
@@ -215,7 +205,7 @@
     }
 	, 
     {
-        "quote": "If you see a rainbow, take comfort in the fact that someone somewhere is getting rained on, maybe even struck by lightning.", 
+        "quote": "If you see a rainbow, take comfort in the fact that someone somewhere is getting rained on, perhaps even struck by lightning.", 
         "citation": "Grumpy Cat"
     }
 	, 
@@ -237,11 +227,6 @@
     {
         "quote": "Courage doesn't mean you don't get afraid. Courage means you don't let fear stop you.", 
         "citation": "Bethany Hamilton"
-    }
-	, 
-    {
-        "quote": "If anyone can refute me; show me I'm making a mistake or looking at things from the wrong perspective, I'll gladly change. It's the truth I'm after, and the truth never harmed anyone. What harms us is to persist in self-deceit and ignorance.", 
-        "citation": "Marcus Aurelius (VI: 21)"
     }
 	, 
     {
@@ -277,11 +262,6 @@
     {
         "quote": "A mind is like a parachute. It doesn't work if it is not open.", 
         "citation": "Frank Zappa"
-    }
-	, 
-    {
-        "quote": "It doesn't make sense to hire smart people and then tell them what to do; we hire smart people so they can tell us what to do.", 
-        "citation": "Steve Jobs"
     }
 	, 
     {
@@ -360,11 +340,6 @@
     }
 	, 
     {
-        "quote": "Change will lead to insight more often than insight will lead to change.", 
-        "citation": "Milton H. Erickson"
-    }
-	, 
-    {
         "quote": "It is not the man who has too little, but the man who craves more, that is poor.", 
         "citation": "Seneca the Younger"
     }
@@ -391,11 +366,6 @@
 	, 
     {
         "quote": "In all chaos there is a cosmos, in all disorder a secret order.", 
-        "citation": "Carl Jung"
-    }
-	, 
-    {
-        "quote": "The most intense conflicts, if overcome, leave behind a sense of security and calm which is not easily disturbed, or else a brokenness that can hardly be healed. Conversely, it is just these intense conflicts and their conflagration which are needed in order to produce valuable and lasting results.", 
         "citation": "Carl Jung"
     }
 	, 
@@ -460,11 +430,6 @@
     }
 	, 
     {
-        "quote": "Necessity is the mother of taking chances.", 
-        "citation": "Mark Twain"
-    }
-	, 
-    {
         "quote": "One of the most striking differences between a cat and a lie is that a cat has only nine lives.", 
         "citation": "Mark Twain"
     }
@@ -482,11 +447,6 @@
     {
         "quote": "I'm suspicious of people who don't like dogs, but I trust a dog when it doesn't like a person.", 
         "citation": "Bill Murray"
-    }
-	, 
-    {
-        "quote": "Ideologies separate us. Dreams and anguish bring us together.", 
-        "citation": "Eugene Ionesco"
     }
 	, 
     {
@@ -730,11 +690,6 @@
     }
 	, 
     {
-        "quote": "Whether it is to be Utopia or Oblivion will be a touch-and-go relay race right up to the final moment . . . Humanity is in \"final exam\" as to whether or not it qualifies for continuance in Universe.", 
-        "citation": "Buckminster Fuller"
-    }
-	, 
-    {
         "quote": "There is considerable overlap between the intelligence of the smartest bears and the dumbest tourists.", 
         "citation": "Unknown Yosemite National Park Ranger"
     }
@@ -747,5 +702,9 @@
     {
         "quote": "Both optimists and pessimists contribute to our society. The optimist invents the airplane and the pessimist the parachute.",
         "citation": "Gil Stern"
+    }
+    {
+        "quote": "The scariest moment is always just before you start.",
+        "citation": "Stephen King (On Writing: A Memoir of the Craft)"
     }
 ]
