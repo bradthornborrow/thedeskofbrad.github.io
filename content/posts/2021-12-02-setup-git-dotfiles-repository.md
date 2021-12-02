@@ -1,12 +1,12 @@
 +++
-title = "Setup a Git 'dotfiles' repository"
+title = "Setup a 'dotfiles' repository using Git"
 date = 2021-12-02
 tags = [ "linux", "git" ]
 +++
 
-This post covers the basic steps to setup a __Git bare repository__ for tracking local system configuration file changes. The local repository can be pushed remotely to backup or sync with other systems. This process is based on an article I found at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).  
+This post covers the basic steps to setup a __Git bare repository__ to track local system configuration file changes. The local repo can also be pushed remotely for backup or syncing with other systems. This process is based on a tutorial I found at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).  
 
-To set things up, run the following commands to create the bare Git repository and add the `dotfiles` alias in your system `.bashrc` file. These commands can be run individually or pasted into a single bash script.  
+To set things up, run the following commands to create the bare Git repository and add the `dotfiles` alias in your system `.bashrc` file. These commands can be run individually or pasted and run in a single bash script.  
 
 ```
 git init --bare $HOME/.dotfiles
@@ -38,7 +38,7 @@ dotfiles remote add origin git@gitlab.com:yourname/blankrepo.git
 dotfiles push -u origin master
 ```
 
-If setting up a new system and you need to pull down the previous configuration, follow the first steps above to setup `dotfile` sync. Once setup, use these commands to connect your remote repo and pull down the latest config:  
+If setting up a new system and you need to pull down the previous configuration, follow the first step to setup `dotfile` sync. Once this is setup, use these commands to connect your remote repo and pull down the latest config:  
 
 ```
 dotfiles remote add origin git@gitlab.com:yourname/remoterepo.git 
