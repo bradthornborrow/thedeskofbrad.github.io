@@ -10,6 +10,6 @@ Hello, my name is Brad Thornborrow. I’m an Information Technology and Privacy 
 
 I maintain this website as my personal and professional portfolio. It is built using [Hugo](http://gohugo.io/) and hosted on [GitHub](https://github.com), who I highly recommend. As always, opinions expressed on this site are my own and not the views of my employers, past, present or future (or family and friends for that matter).
 
-To contact me, use the [Contact](/contact) page, or send me a message on [Twitter](https://twitter.com/thedeskofbrad). Being an unapologetic news junkie, I’m pretty much always online. 
+To contact me, use the [Contact](/contact) page, or send me a message on [Twitter](https://twitter.com/thedeskofbrad).  
 
-Be safe out there…
+Take care.  
