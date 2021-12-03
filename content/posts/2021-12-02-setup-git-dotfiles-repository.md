@@ -38,7 +38,7 @@ dotfiles remote add origin git@gitlab.com:yourname/blank-repo.git
 dotfiles push -u origin master
 ```
 
-When setting up a new system, you can pull down your remote config using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. Once this is done, use these commands to connect your remote repository and pull down the config to your local system.  
+When setting up a new system, you can pull down your remote config using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. When this is done, these commands will connect your remote repository and pull down the config to your local system.  
 
 ```
 dotfiles remote add origin git@gitlab.com:yourname/repo-name.git 
