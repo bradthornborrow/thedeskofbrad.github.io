@@ -44,7 +44,8 @@ disableHugoGeneratorInject = false
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 3:04 PM"
+#  dateformNumTime = "2006-01-02 3:04 PM"
+  dateformNumTime = "2006-01-02"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
