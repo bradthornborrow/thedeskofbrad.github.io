@@ -1,8 +1,13 @@
+figcaption {
+  text-indent: 1em;
+}
+
 hr {
   margin-top: 2em;
 }
 
 img {
+  border-radius: 10px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }

@@ -12,13 +12,13 @@
             {{ with (.Get "title") -}}
                 {{ . }}
             {{- end -}}
-            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+            {{- if or (.Get "caption") (.Get "attr") -}}
                 {{- .Get "caption" | markdownify -}}
                 {{- with .Get "attrlink" }}
                     <a href="{{ . }}">
                 {{- end -}}
                 {{- .Get "attr" | markdownify -}}
-                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+                {{- if .Get "attrlink" }}</a>{{ end }}
             {{- end }}
         </figcaption>
     {{- end }}

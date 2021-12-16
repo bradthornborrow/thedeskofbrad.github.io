@@ -4,9 +4,9 @@ date = 2021-12-02
 tags = [ "linux", "git" ]
 +++
 
-This post covers the basic steps to setup a __Git bare repository__ for tracking and backing up local system config files (a.k.a. `dotfiles`). The process is based on an article I found posted at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles) which goes into much greater detail.  
+This post covers the basic steps to setup a __Git bare repository__ to track and backup your local system config files (a.k.a. `dotfiles`). The process is based on an article I found posted at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles) which goes into much greater detail.  
 
-To set things up, use the following script to create a bare Git repository and add the `dotfiles` alias to your system `.bashrc` file. These commands could also be run individually if preferred.
+To set things up, use the following script to create a bare Git repository and add the `dotfiles` alias. These commands could also be run individually if preferred.
 
 ```bash
 #!/bin/sh
@@ -32,22 +32,22 @@ dotfiles add ~/.bashrc
 dotfiles commit -am "Add .bashrc" 
 ```
 
-To backup the config remotely, setup a Git repository on your platform of choice (e.g. [GitLab](https://gitlab.com)). Once this is done, the following commands will connect your local repo and push the contents to the remote.  
+To backup the config remotely, setup a Git repository using your platform of choice (e.g. [GitLab](https://gitlab.com)). Once this is done, the following commands will connect your local repo and push the contents to the remote.  
 
 ```
 dotfiles remote add origin git@gitlab.com:yourname/blank-repo.git 
 dotfiles push -u origin master
 ```
 
-When setting up a new system, you can pull down the config using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. After this is done, these commands will connect the remote repository and pull down the config.  
+When setting up a new system, you can pull down the config using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. After this is done, follow these commands to connect the remote repository and pull down the stored config.  
 
 ```
 dotfiles remote add origin git@gitlab.com:yourname/repo-name.git 
 dotfiles checkout
 ```
 
-Once this has been checked out locally, everything works the same to add, update or delete configuration files and push the changes remotely.
+Once checked out locally, everything works the same to add, update or delete configuration files and push the changes remotely.
 
-I drafted this post primarily for my own reference but if you found it helpful, you're welcome. To contact me, please use the [Contact](/contact) page, or message me on [Twitter](https://twitter.com/TheDeskofBrad).  
+I drafted this post primarily for my own reference but if you found it helpful, you're welcome ツ. To contact me, please use the [Contact](/contact) page, or message me on [Twitter](https://twitter.com/TheDeskofBrad).  
 
 Take care.  
