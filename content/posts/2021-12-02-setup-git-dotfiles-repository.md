@@ -1,52 +1,48 @@
 +++
-title = "Setup a Git 'dotfiles' repository"
+title = "Setup a 'dotfiles' repository in Git"
 date = 2021-12-02
 tags = [ "linux", "git" ]
 +++
 
-This post covers the basic steps to setup a __Git bare repository__ to track and backup your local system config files (a.k.a. `dotfiles`). The process is based on an article I found posted at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles) which goes into much greater detail.  
+This post covers the the basic steps to backup and sync your Linux system config files (a.k.a. `dotfiles`) using a __Git bare repository__. The process is based on an article I found at [Atlassian](https://www.atlassian.com/git/tutorials/dotfiles) which goes into much greater detail.  
 
-To set things up, use the following script to create a bare Git repository and add the `dotfiles` alias. These commands could also be run individually if preferred.
+To set things up, use the following console commands to create the bare Git repository and add the `dotfiles` alias.
 
 ```bash
-#!/bin/sh
 git init --bare $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
-
-echo -e "\n# Add alias for git dotfiles sync command" >> $HOME/.bashrc
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
 ```
 
-If run as a script, it must be executed using the `source` command (as shown below) or the `dotfiles` alias will not remain active in the current shell context.
+Once this is done, the following command must be added to the `.bashrc` file in your home directory. This command recreates the `dotfiles` alias on system login.
+
+```bash
+# Add alias for git dotfiles sync command
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
+
+After the `.dotfiles` repo has been created, all standard git operations are permitted, using `dotfiles` instead of `git`. For example, the following commands will add the `.bashrc` file to your `dotfiles` repository for tracking and commit the changes:  
 
 ```
-source ./setup-dotfile-sync.sh
-```
-
-Once the `.dotfiles` repo has been created, all the usual `git` operations are permitted, using `dotfiles` in place of `git`. For example:  
-
-```
-dotfiles status  
 dotfiles add ~/.bashrc
 dotfiles commit -am "Add .bashrc" 
 ```
 
-To backup the config remotely, setup a Git repository using your platform of choice (e.g. [GitLab](https://gitlab.com)). Once this is done, the following commands will connect your local repo and push the contents to the remote.  
+To backup your config files remotely and sync with other systems, setup a Git repository on your platform of choice (e.g. [GitHub](https://github.com)). Once this is done, the following commands will connect your local repo and push the contents to the remote.  
 
 ```
-dotfiles remote add origin git@gitlab.com:yourname/blank-repo.git 
+dotfiles remote add origin git@github.com:yourname/blank-repo.git 
 dotfiles push -u origin master
 ```
 
-When setting up a new system, you can pull down the config using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. After this is done, follow these commands to connect the remote repository and pull down the stored config.  
+When setting up new systems, you can pull down your config files using a similar process. First, follow the initial steps to setup the bare repo and `dotfile` sync alias. After this is done, follow these commands to connect the remote repository and pull down the last saved config.  
 
 ```
-dotfiles remote add origin git@gitlab.com:yourname/repo-name.git 
+dotfiles remote add origin git@github.com:yourname/repo-name.git 
 dotfiles checkout
 ```
 
-Once checked out locally, everything works the same to add, update or delete configuration files and push the changes remotely.
+Once checked out locally, everything works the same to add, update or delete configuration files and push the changes remotely. This will also allow you to pull down any changes to your other systems, keeping them in sync.
 
 I drafted this post primarily for my own reference but if you found it helpful, you're welcome ツ. To contact me, please use the [Contact](/contact) page, or message me on [Twitter](https://twitter.com/TheDeskofBrad).  
 
