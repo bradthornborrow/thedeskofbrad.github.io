@@ -39,7 +39,7 @@ When setting up new systems, you can pull down your config files using a similar
 
 ```
 dotfiles remote add origin git@github.com:yourname/repo-name.git 
-dotfiles checkout
+dotfiles pull origin master
 ```
 
 Once checked out locally, everything works the same to add, update or delete configuration files and push the changes. This will also allow you to pull down any changes to your other systems, keeping them in sync.
