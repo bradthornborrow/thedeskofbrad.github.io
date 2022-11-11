@@ -77,9 +77,9 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/brad-thornborrow-130b89165/"
 
   [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/thedeskofbrad"
-	
+    name = "mastodon"
+    url  = "https://floss.social/web/@elbraderino"
+
   [[params.social]]
     name = "youtube"
     url  = "https://www.youtube.com/channel/UC63IzK4ocGIkJtgYByM1c8Q"
