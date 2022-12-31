@@ -70,7 +70,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "github"
-    url  = "https://github.com/TheDeskofBrad"
+    url  = "https://github.com/bradthornborrow"
 
   [[params.social]]
     name = "linkedin"
@@ -78,11 +78,11 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "mastodon"
-    url  = "https://floss.social/web/@elbraderino"
+    url  = "https://floss.social/web/@bradthornborrow"
 
   [[params.social]]
     name = "youtube"
-    url  = "https://www.youtube.com/channel/UC63IzK4ocGIkJtgYByM1c8Q"
+    url  = "https://www.youtube.com/@bradthornborrow"
 
 
 [languages]
