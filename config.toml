@@ -1,8 +1,6 @@
 baseURL = "https://thedeskofbrad.ca"
 title = "Brad Thornborrow"
-
-DefaultContentLanguage = "en"
-
+languageCode = "en-us"
 theme = "hello-friend-ng"
 
 # rssLimit  = 10  # Maximum number of items in the RSS feed.
@@ -97,10 +95,6 @@ disableHugoGeneratorInject = false
       logoText = "HOME"
       logoHomeLink = "/"
       logoCursorColor = "#34fe2e"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
 [menu]
   [[menu.main]]
