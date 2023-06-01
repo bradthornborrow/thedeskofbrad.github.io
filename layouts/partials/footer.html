@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; {{ now.Format "2006" }}
+            {{ if .Site.Author.name }}
+                {{ .Site.Author.name }}
+				<a href="{{ "motd" | absLangURL }}" title="motd"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0em; margin-right:0.25em;"><rect x="3" y="4" width="18" height="15" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></a>
+            {{ end }}
+			</span>
+            <span>{{ .Site.Copyright| safeHTML }}
+			<a href="{{ "index.xml" | absLangURL }}" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>{{ end }}</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a> &amp; <a href="https://themes.gohugo.io/hugo-theme-hello-friend-ng/" rel="nofollow">Hello Friend NG</a></span>
+        </div>
+    </div>
+</footer>
