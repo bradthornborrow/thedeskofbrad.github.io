@@ -755,17 +755,17 @@
     }
     ,
     {
-        "quote": "Beauty is truth, truth beauty. That is all ye know on earth, and all ye need to know.", 
-        "citation": "John Keats"
-    }
-    ,
-    {
         "quote": "If you don't know where you are going, any road will get you there.", 
         "citation": "Lewis Carroll"
     }
     ,
     {
-	"quote": "He has no enemies, but is intensely disliked by his friends.",
+	"quote": "He had no enemies, but was intensely disliked by his friends.",
 	"citation": "Oscar Wilde"
+    }
+    ,
+    {
+	"quote": "I learned to listen with patience and care, and never to interrupt even when people were having great difficulty in explaining themselves, for during such halting and imprecise moments (as the listening skills of my patient mother taught me) people are very revealing - what they hesitate to talk about can tell much about them.",
+	"citation": "Gay Talese"
     }
 ]
