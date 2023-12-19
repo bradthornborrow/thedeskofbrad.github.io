@@ -21,7 +21,8 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         run: |
           echo "- $((RANDOM % 1000))" > ./data/random.yml
-          git config --local user.name ${{ github.actor }}
+          git config --local user.name github-actions
+          git config --local user.email github-actions@github.com
           git commit -am "Update random seed file"
           git push
 
