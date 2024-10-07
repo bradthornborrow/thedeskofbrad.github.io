@@ -3,7 +3,9 @@ title = "Brad Thornborrow"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
-# rssLimit  = 10  # Maximum number of items in the RSS feed.
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 # googleAnalytics = ""
@@ -32,7 +34,7 @@ disableHugoGeneratorInject = false
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
-[author]
+[params.author]
   name = "Brad Thornborrow"
 
 [taxonomies]
