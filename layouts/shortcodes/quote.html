@@ -1,4 +1,14 @@
-{{ $quotes := getJSON "static/quotes.json" }}
+{{ $quotes := dict }}
+{{ $url := "static/quotes.json" }}
+{{ with resources.GetRemote $url }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $quotes = . | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
+{{ end }}
 {{ $quoteCount := len $quotes }}
 {{ $random := index .Site.Data.random 0 }}
 {{ $quoteIndex := div (mul (len $quotes) $random) 1000 }}
