@@ -1,13 +1,11 @@
 {{ $quotes := dict }}
-{{ $url := "static/quotes.json" }}
-{{ with resources.GetRemote $url }}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else }}
-    {{ $quotes = . | transform.Unmarshal }}
+{{ $path := "static/quotes.json" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $quotes = . }}
   {{ end }}
 {{ else }}
-  {{ errorf "Unable to get remote resource %q" $url }}
+  {{ errorf "Unable to get global resource %q" $path }}
 {{ end }}
 {{ $quoteCount := len $quotes }}
 {{ $random := index .Site.Data.random 0 }}
