@@ -1,5 +1,5 @@
 {{ $quotes := dict }}
-{{ $path := "static/quotes.json" }}
+{{ $path := "quotes.json" }}
 {{ with resources.Get $path }}
   {{ with . | transform.Unmarshal }}
     {{ $quotes = . }}
