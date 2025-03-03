@@ -713,11 +713,6 @@
         "quote": "Pride is a master of deception; when you think you're occupied in the weightiest business, that's when it has you in its spell", 
         "citation": "Marcus Aurelius (VI: 13)"
     }
-	, 
-    {
-        "quote": "Insights are often found by simply describing the problem aloud.",
-        "citation": "Duck, Quack Overflow"
-    }
     ,
     {
         "quote": "It's silly to try to escape other people's faults, They are inescapable. Just try to escape your own.", 
@@ -795,11 +790,6 @@
     }
     ,
     {
-        "quote": "The public is wonderfully tolerant. It forgives everything except genius.",
-        "citation": "Oscar Wilde"
-    }
-    ,
-    {
         "quote": "We make up horrors to help us cope with the real ones.",
         "citation": "Stephen King"
     }
@@ -812,5 +802,10 @@
     {
         "quote": "Forces beyond your control can take away everything you possess except one thing, your freedom to choose how you will respond to the situation.",
         "citation": "Viktor Frankl"
+    }
+    ,
+    {
+        "quote": "Idleness, indifference and irresponsibility are healthy responses to absurd work.",
+        "citation": "Frederick Herzberg"
     }
 ]
