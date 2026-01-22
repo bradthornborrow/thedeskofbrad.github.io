@@ -73,16 +73,16 @@ disableHugoGeneratorInject = false
     url  = "https://github.com/bradthornborrow"
 
   [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/brad-thornborrow-909b21382"
+
+  [[params.social]]
     name = "mastodon"
     url  = "https://mstdn.ca/web/@bradthornborrow"
 
   [[params.social]]
     name = "youtube"
     url  = "https://www.youtube.com/@bradthornborrow"
-
-  [[params.social]]
-    name = "etsy"
-    url  = "https://www.etsy.com/shop/TheDeskofBrad"
 
 [languages]
   [languages.en.params]
