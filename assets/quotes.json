@@ -1,7 +1,7 @@
 [
     {
         "quote": "People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.", 
-        "citation": "Steve Jobs (Apple WWDC, 1997)"
+        "citation": "Steve Jobs (Apple WWDC 1997)"
     }
 	, 
     {
@@ -816,6 +816,11 @@
     ,
     {
         "quote": "Adding car lanes to deal with traffic congestion is like loosening your belt to cure obesity.",
-        "citation": "Lewis Mumford, 1955"
+        "citation": "Lewis Mumford"
+    }
+    ,
+    {
+        "quote": "They're talking about things of which they don't have the slightest understanding, anyway. It's only because of their stupidity that they're able to be so sure of themselves.",
+        "citation": "Franz Kafka (The Trial)"
     }
 ]
